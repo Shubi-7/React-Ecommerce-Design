@@ -7,6 +7,7 @@ import Slide from './Slide'
 
 function Home() {
     return (
+        
         <div>
             <Nav/>
             <Carousel/>

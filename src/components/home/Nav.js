@@ -1,7 +1,15 @@
 import React from 'react'
-import {Link } from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
+const isActive=(history,path)=>{
+    if(history.location.pathname===path){
+        return {color:'orange'}
+    }
+    else{
+        return {color:'white'}
+    }
+}
 
-function Nav() {
+function Nav({history}) {
     return (
         <>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -13,13 +21,13 @@ function Nav() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                    <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                    <Link className="nav-link" style={isActive(history,'/')} to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/contact">Shop</Link>
+                    <Link className="nav-link" style={isActive(history,'/shop')} to="/shop">Shop</Link>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/contact">Contact</Link>
+                    <Link className="nav-link" style={isActive(history,'/contact')} to="/contact">Contact</Link>
                     </li>
                 </ul>
                 <form className="d-flex">
@@ -37,4 +45,4 @@ function Nav() {
     )
 }
 
-export default Nav
+export default withRouter(Nav)

@@ -9,7 +9,7 @@ function Footer() {
 <div class="container">
   <div class="row">
     <div class="col-lg-5 col-xs-12 about-company">
-      <h2>Heading</h2>
+      <h2>Ecommerce</h2>
       <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
       <p><Link to="#"><i class="fa fa-facebook-square mr-1"></i></Link><Link to="#"><i class="fa fa-linkedin-square"></i></Link></p>
     </div>
