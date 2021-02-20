@@ -15,10 +15,10 @@ function Footer() {
     </div>
     <div class="col-lg-3 col-xs-12 links">
       <h4 class="mt-lg-0 mt-sm-3">Links</h4>
-        <ul class="m-0 p-0">
-          <li>- <Link to="#">Lorem ipsum</Link></li>
-          <li>- <Link to="#">Nam mauris velit</Link></li>
-          <li>- <Link to="#">Etiam vitae mauris</Link></li>
+        <ul class="m-0 p-0 foot">
+          <li>- <Link to="/">Home</Link></li>
+          <li>- <Link to="/contact">Contact</Link></li>
+          <li>- <Link to="/shop">Shop</Link></li>
           <li>- <Link to="#">Fusce scelerisque</Link></li>
           <li>- <Link to="#">Sed faucibus</Link></li>
           <li>- <Link to="#">Mauris efficitur nulla</Link></li>

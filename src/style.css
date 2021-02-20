@@ -31,7 +31,6 @@
     .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
   }
 
-
   /*Slider*/
 
   .App {
@@ -46,4 +45,23 @@
     outline: none;
     box-shadow: inset 0 0 1px 0px violet;
   }
+
+  .foot{
+
+    list-style-type: none;
+    text-decoration: none;
+
+    
+  }
+
+  .foot li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        }
+    }
+
+
   
